@@ -13,7 +13,7 @@ const lists = [
 
 const nav = (lists) =>
   lists.map((list) => (
-    <li>
+    <li key={path}>
       <Link href={`${list.path}`}>{list.pageName}</Link>
     </li>
   ))
